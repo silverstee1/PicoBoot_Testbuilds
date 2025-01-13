@@ -19,6 +19,8 @@ include(pico_sdk_import.cmake)
 
 project(picoboot LANGUAGES C CXX ASM VERSION ${CMAKE_GIT_REPO_VERSION})
 
+add_compile_definitions(PICO_FLASH_SPI_CLKDIV=4)
+
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
